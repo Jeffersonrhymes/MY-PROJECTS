@@ -1,2 +1,2 @@
 # all GOOD
-![Jefferson_Ndifor_DSP_Resume_Styled.pdf](https://github.com/user-attachments/files/22186810/Jefferson_Ndifor_DSP_Resume_Styled.pdf)
+![MOST](https://github.com/user-attachments/assets/66b4b691-5a46-4f82-9f0d-4af38e99503a)
