@@ -62,6 +62,6 @@ in the provided space below to input script insert this script
 
 {}
 
-then hit test
+then hit test to deploy
 ```
 
