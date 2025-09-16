@@ -2,7 +2,7 @@
 ![lambda-eventBridge-ec2-deployment](https://github.com/user-attachments/assets/abee8455-fddb-4ba5-97ad-02f2faa17bca)
 
 ## python script to start instances
-'''xml 
+```xml 
 import boto3
 
 def lambda_handler(event, context):
