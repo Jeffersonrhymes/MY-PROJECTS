@@ -1,14 +1,14 @@
 # Setting up lambda-EC2 automation with AWS EvENT Bridge
 ![lambda-eventBridge-ec2-deployment](https://github.com/user-attachments/assets/abee8455-fddb-4ba5-97ad-02f2faa17bca)
 
-##python script to start instances
+## Python script to start instances
 ```xml 
 import boto3
 
 def lambda_handler(event, context):
     ec2 = boto3.client('ec2', region_name='us-east-1')
     
-    user_data_script = '''#!/bin/bash to install apache
+    user_data_script = '''#!/bin/bash #to install apache
 yum update -y
 yum install -y httpd
 systemctl start httpd
