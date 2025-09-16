@@ -109,6 +109,7 @@ then hit test to deploy
 
 ## Create 2 AWS EventBridge to automate this deployment either Hourly,Daily,Weekly or Monthly
 ## START AND STOP Schedulers
+<img width="1607" height="826" alt="Screenshot 2025-09-16 at 08-18-24 Amazon EventBridge Scheduler us-east-1" src="https://github.com/user-attachments/assets/b83ad989-bcb0-4da1-ba8b-7713756974f0" />
 
 ## .A) START SCHEDULER STEPS
 ```xml
@@ -125,4 +126,5 @@ You will need to create 2 event schedulers
 ```
 
 ### Repeat this same steps to create STOP SCHEDULER
+<img width="1603" height="590" alt="Screenshot 2025-09-16 at 08-21-32 Amazon EventBridge Scheduler us-east-1" src="https://github.com/user-attachments/assets/b94cf78d-75ae-4f8b-af48-72cfb539b28d" />
 
