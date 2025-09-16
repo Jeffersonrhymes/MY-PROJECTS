@@ -27,11 +27,20 @@ systemctl enable httpd
         UserData=user_data_script,  # Correct parameter name (case-sensitive)
         TagSpecifications=[{
             'ResourceType': 'instance',
-            'Tags': [{'Key': 'AutoManaged', 'Value': 'True'}] give your own key value pair{tags}
+            'Tags': [{'Key': 'AutoManaged', 'Value': 'True'}] #give your own key value pair{tags}
         }]
     )
     
     instance_ids = [inst['InstanceId'] for inst in response['Instances']]
     print(f"Launched instances: {instance_ids}")
+```
+
+## Deploy and create a test even
+```xml
+Give your test event a name and choose Hello world as Template
+in the provided space below to input script insert this script
+
+{}
+
 ```
 
