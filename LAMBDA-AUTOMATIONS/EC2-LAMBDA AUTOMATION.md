@@ -58,6 +58,11 @@ systemctl enable httpd
     
     instance_ids = [inst['InstanceId'] for inst in response['Instances']]
     print(f"Launched instances: {instance_ids}")
+
+
+On line 48 and 49 where it says "MinCount= 5 and MaxCount= 5" stats that,
+This script will create a minimunm of 5 ec2-instances and 5 maximum instances.
+
 ```
 
 ## Deploy and create a test even to start instances
