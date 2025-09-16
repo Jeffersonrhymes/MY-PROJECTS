@@ -1,4 +1,7 @@
 # Deploying this automated EC2 instance scheduler using AWS Lambda + EventBridge gives you several practical benefits, especially around cost savings, automation, and scalability.
+<img width="1604" height="421" alt="Screenshot 2025-09-16 at 09-02-45 Functions Lambda" src="https://github.com/user-attachments/assets/ba8d77e4-5f9d-4b84-ba0c-2856a6d319e0" />
+<img width="1885" height="857" alt="Screenshot 2025-09-16 at 09-02-15 Amazon EventBridge Scheduler us-east-1" src="https://github.com/user-attachments/assets/cf56de5a-8b62-4990-a67f-8309c88745fd" />
+
 
 Let’s break it down clearly:
 
