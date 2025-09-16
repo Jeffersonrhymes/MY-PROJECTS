@@ -1,6 +1,26 @@
 # Setting up lambda-EC2 automation with AWS EvENT Bridge
 ![lambda-eventBridge-ec2-deployment](https://github.com/user-attachments/assets/abee8455-fddb-4ba5-97ad-02f2faa17bca)
 
+## project role/permission script
+```xml
+
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"ec2:RunInstances",
+				"ec2:StopInstances",
+				"ec2:DescribeInstances",
+				"ec2:CreateTags"
+			],
+			"Resource": "*"
+		}
+	]
+}
+```
+
 ## Python script to start instances
 ```xml 
 import boto3
@@ -42,5 +62,6 @@ in the provided space below to input script insert this script
 
 {}
 
+then hit test
 ```
 
