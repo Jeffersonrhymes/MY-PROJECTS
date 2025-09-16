@@ -21,6 +21,11 @@
 }
 ```
 
+
+### Make sure your lambd configurations has the right permission to execute start and stop instances
+
+
+
 ## Python script to start instances
 ```xml 
 import boto3
@@ -55,7 +60,7 @@ systemctl enable httpd
     print(f"Launched instances: {instance_ids}")
 ```
 
-## Deploy and create a test even
+## Deploy and create a test even to start instances
 ```xml
 Give your test event a name and choose Hello world as Template
 in the provided space below to input script insert this script
@@ -65,3 +70,39 @@ in the provided space below to input script insert this script
 then hit test to deploy
 ```
 
+## Python scripts to Stop EC2 instances
+```xml
+import boto3
+
+def lambda_handler(event, context):
+    ec2 = boto3.client('ec2', region_name='us-east-1')
+
+    instances = ec2.describe_instances(
+        Filters=[
+            {'Name': 'tag:AutoManaged', 'Values': ['True']},
+            {'Name': 'instance-state-name', 'Values': ['running']}
+        ]
+    )
+
+    instance_ids = [
+        inst['InstanceId']
+        for res in instances['Reservations']
+        for inst in res['Instances']
+    ]
+
+    if instance_ids:
+        ec2.stop_instances(InstanceIds=instance_ids)
+        print(f"Stopped instances: {instance_ids}")
+    else:
+        print("No instances found to stop.")
+```
+
+## Deploy and create a test even to stop instances
+```xml
+Give your test event a name and choose Hello world as Template
+in the provided space below to input script insert this script
+
+{}
+
+then hit test to deploy
+```
