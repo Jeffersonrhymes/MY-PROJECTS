@@ -1,7 +1,7 @@
 # Setting up lambda-EC2 automation with AWS EvENT Bridge
 ![lambda-eventBridge-ec2-deployment](https://github.com/user-attachments/assets/abee8455-fddb-4ba5-97ad-02f2faa17bca)
 
-## python script to start instances
+##python script to start instances
 ```xml 
 import boto3
 
@@ -33,6 +33,5 @@ systemctl enable httpd
     
     instance_ids = [inst['InstanceId'] for inst in response['Instances']]
     print(f"Launched instances: {instance_ids}")
-
-
+```
 
