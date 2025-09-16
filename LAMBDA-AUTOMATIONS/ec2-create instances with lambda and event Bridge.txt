@@ -1,1 +1,1 @@
-
+lets deploy a full automation with lambda using python script and automating this deployment using AWS eventBridge and cron TAB
