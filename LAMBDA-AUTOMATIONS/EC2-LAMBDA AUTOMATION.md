@@ -106,3 +106,23 @@ in the provided space below to input script insert this script
 
 then hit test to deploy
 ```
+
+## Create 2 AWS EventBridge to automate this deployment either Hourly,Daily,Weekly or Monthly
+## START AND STOP Schedulers
+
+## .A) START SCHEDULER STEPS
+```xml
+Amazon EventBridge Scheduler
+
+Amazon EventBridge Scheduler is a serverless scheduler that allows you to create, run, and manage tasks from one central, managed service. Highly scalable, EventBridge Scheduler allows you to schedule millions of tasks that can invoke any AWS service as a target.
+
+You will need to create 2 event schedulers
+.1 "START scheduler" with cron-job to start your instances
+.2 Select the TARGET SERVICE eg. "AWS LAMBDA Invoke"
+.3 Choose the invoke function you created "START INSTANCES"
+.4 Payload input this script "{}"
+.5 Proceed with permission granting on the next page and create your scheduler.
+```
+
+### Repeat this same steps to create STOP SCHEDULER
+
